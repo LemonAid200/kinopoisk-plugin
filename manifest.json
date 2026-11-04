@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Kinopoisk upgrade",
+  "version": "1.0",
+  "description": "Добавляет кнопку перехода на альтернативный плеер.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.kinopoisk.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
